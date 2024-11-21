@@ -1,0 +1,398 @@
+@media screen and (max-width: 480px) {
+  * {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+  }
+
+  body {
+    font-family: helvetica;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333;
+  }
+
+  header {
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: #333947;
+    padding-bottom: -20px !important;
+  }
+
+  figure {
+    z-index: 100;
+  }
+
+  figure img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    width: 60%;
+  }
+
+  nav {
+    position: relative;
+    padding: 15px;
+    z-index: 100;
+  }
+  nav ul {
+    background-color: #333947;
+    color: white;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: -12px;
+    gap: 0;
+    position: absolute;
+    top: 100%;
+    width: 90%;
+    left: -120%;
+    transition: all 0.5s linear;
+    z-index: 100;
+  }
+  nav ul li {
+    padding: 5px 0px;
+    width: 100%;
+    z-index: 100;
+  }
+
+  nav ul li:hover {
+    background: white;
+    color: rgb(84, 166, 221) !important;
+  }
+
+  nav ul li a {
+    width: 100%;
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+  }
+
+  nav ul li a:hover {
+    color: rgb(84, 166, 221) !important;
+  }
+
+  #icono_menu {
+    display: flex;
+    position: absolute;
+    top: -20px;
+    right: 30px;
+    z-index: 100;
+  }
+
+  #icono_menu i {
+    color: white;
+    font-size: 30px;
+  }
+
+  nav ul.abrir_menu {
+    left: 0;
+  }
+  nav ul.cerrar_menu {
+    left: -120%;
+  }
+
+  .slide_fotos {
+    width: 100%;
+    position: relative;
+  }
+
+  .slide_fotos .rslides {
+    width: 100%;
+  }
+
+  .rslides li {
+    width: 100%;
+  }
+
+  .rslides li img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .texto {
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    margin-top: 25%;
+    color: white;
+    background-color: #3333334b;
+  }
+
+  .texto a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(84, 166, 221);
+    padding: 15px 35px;
+  }
+
+  .texto h1 {
+    font-size: 32px;
+    line-height: 40px;
+    margin-bottom: 20px;
+  }
+
+  .texto p {
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .modal {
+    margin: auto;
+    text-align: center;
+    padding: 15px 40px;
+    margin-top: 15px;
+  }
+
+  .modal a {
+    text-decoration: none;
+    color: white;
+    background-color: rgb(84, 166, 221);
+    border-radius: 15px;
+    padding: 15px 40px;
+  }
+
+  section {
+    max-width: 1200px;
+    margin-top: 30px !important;
+    margin: auto;
+    z-index: -600;
+  }
+
+  section figure {
+    margin: auto;
+    text-align: center;
+  }
+
+  section h1 {
+    text-align: center;
+  }
+
+  .banner-contenedor {
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.658);
+    display: none;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    z-index: 12;
+  }
+
+  .banner-modal {
+    background-color: #54a6dd !important;
+    padding: 20px;
+    border-radius: 15px;
+    overflow: auto;
+    background-color: white;
+    position: relative;
+    width: 90%;
+    height: 50vh;
+    z-index: 14;
+    text-align: center;
+  }
+
+  .banner-modal figure {
+    width: 80%;
+  }
+
+  .banner-modal figure img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .banner-modal p {
+    color: white;
+    font-size: 20px;
+  }
+
+  .mostrar {
+    display: flex;
+  }
+
+  .cierre {
+    text-align: right;
+    cursor: pointer;
+    color: red;
+    font-size: 20px;
+    position: absolute;
+    top: 20%;
+    right: 7%;
+  }
+
+  .cierre i {
+    font-size: 30px;
+  }
+
+  .articulos {
+    width: 100%;
+    margin-top: 580px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .articulos article{
+    border: 2px #54a6dd solid;
+    margin-top: 20px;
+    width: 90%;
+    border-radius: 10px;
+  }
+
+  .articulos article h4{
+    margin-bottom: 12px;
+  }
+
+  .articulos article p{
+    margin-bottom: 20px;
+  }
+
+  .icono{
+    color: #54a6dd;
+    font-size: 60px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .galeria{
+    width: 100%;
+  }
+
+  .galeria a{
+    width: 100%;
+  }
+
+  .galeria a figure{
+    width: 100%;
+    height: 280px;
+    margin-top: 20px;
+  }
+
+  .galeria a figure img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  .listado{
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+.acordeon_titulo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 15px;
+    background-color: #54a6dd;
+    margin-top: 15px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.acordeon_contenido{
+    background-color: #54a6dd;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    display: none;
+    margin-top: -10px;
+    margin-bottom: 20px;
+}
+
+.acordeon_contenido h2{
+  margin-top: 30px;
+  font-size: 30px;
+}
+
+.acordeon_contenido figure{
+  width: 100%;
+}
+
+.acordeon_contenido figure img{
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.acordeon_titulo2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 15px;
+    background-color: #54a6dd;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.acordeon_titulo3{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 15px;
+    background-color: #54a6dd;
+    color: white;
+    margin-bottom: 10px;
+}
+.acordeon_titulo4{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 15px;
+    background-color: #54a6dd;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.more{
+    font-size: 25px;
+}
+
+#flecha{
+    transform: rotate(0deg);
+    transition: all .5s;
+}
+#flecha2{
+    transform: rotate(0deg);
+    transition: all .5s;
+}
+#flecha3{
+    transform: rotate(0deg);
+    transition: all .5s;
+}
+
+.rotar{
+    transition: all .5s;
+    transform: rotate(180deg) !important;
+}
+
+footer{
+  background-color: #333947;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+footer h1{
+  margin-top: 10px;
+}
+}
